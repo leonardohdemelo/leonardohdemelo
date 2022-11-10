@@ -1,5 +1,6 @@
 <div align="center">
   <h1> Olá, eu sou o Leonardo. </h1>
+  <h1> Hello, I am Leonardo. </h2>
 </div>
 
 <div style="display: inline_block" align="center"><br>

@@ -1,6 +1,29 @@
-<div align="center">
-  <h1> Olá, eu sou o Leonardo. </h1>
-  <h1> Hello, I am Leonardo. </h2>
+<script>
+    function changeLanguage() {
+        const changeButton = document.getElementById("change-button");
+        const presentationPT = document.getElementById("pt-br");
+        const presentationEN = document.getElementById("en-us"); 
+
+        if (presentationPT.style.display === "none") {
+            presentationPT.style.display = "block";
+            presentationEN.style.display = "none";
+            changeButton.innerText = "EN-US";
+        } else {
+            presentationPT.style.display = "none";
+            presentationEN.style.display = "block";
+            changeButton.innerText = "PT-BR";
+        }
+    } 
+</script>
+
+<button onclick="changeLanguage()" id="change-button">Click Me</button>
+
+<div align="center" id="pt-br">
+    <h1> Olá, eu sou o Leonardo. </h1>
+</div>
+
+<div align="center" id="en-us" style="display: none;">
+    <h1> Hello, I am Leonardo. </h2>
 </div>
 
 <div style="display: inline_block" align="center"><br>
